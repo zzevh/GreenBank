@@ -1,0 +1,349 @@
+/* Ustawienia podstawowe */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.message-box {
+  display: none;
+}
+
+body {
+  font-family: "M PLUS 1", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.6;
+  background-color: #1A1E1C;
+  color: #fff;
+}
+
+/* Styl nagłówka */
+header {
+  color: #fff;
+  padding: 40px 20px;
+  /* Dodałem trochę paddingu */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  /* Wyrównanie w pionie */
+  justify-content: space-between;
+}
+
+.logo img {
+  z-index: 2;
+  height: 23px;
+  margin-left: 83.8px;
+  margin-top: 4px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  /* Umożliwia wyświetlanie elementów w linii */
+}
+
+nav ul li {
+  margin-right: 1px;
+  /* Margines między elementami */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "M PLUS 1", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: medium;
+  font-style: normal;
+  padding: 10px 15px;
+}
+
+/* Styl dla przycisku */
+.header-button button {
+  height: 50px;
+  width: 130px;
+  margin-top: -10px;
+  margin-right: 80px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #2BB32A;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #2BB32A;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "M PLUS 1", sans-serif;
+}
+
+.header-button button:hover {
+  background-color: #1f8b1f;
+  color: #79fa5f;
+  /* Kolor przycisku po najechaniu */
+}
+
+.bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.framecard {
+  position: absolute;
+  top: 199px;
+  right: 0px;
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: "M PLUS 1", sans-serif;
+  font-size: 53px;
+  margin-top: 127px;
+  margin-left: 82px;
+  line-height: 1.2;
+  transition: font-size 0.3s ease, margin-left 0.3s ease;
+}
+
+.bottomh1 {
+  font-family: "M PLUS 1", sans-serif;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: 80px;
+  line-height: 1.4;
+  color: #ADB2B1;
+  transition: font-size 0.3s ease, margin-left 0.3s ease;
+}
+
+.get-started {
+  background-color: #2BB32A;
+  width: 195px;
+  height: 56px;
+  color: #fff;
+  border-radius: 999px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 17px;
+  font-weight: medium;
+  margin-top: 30px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+
+.spangetstartyed {
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: auto;
+}
+
+.frame21 {
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.stats-section {
+  padding: 50px 20px;
+  margin-top: 165px;
+  display: flex;
+  justify-content: center;
+}
+
+.stats-container {
+  background-color: rgba(61, 84, 77, 0.24);
+  backdrop-filter: blur(10px);
+  width: 1240px;
+  height: 216px;
+  display: flex;
+  gap: 20px;
+  border: none;
+  padding: 20px;
+  border-radius: 32px;
+  text-align: center;
+}
+
+
+.stat-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.stat-number {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.stat-description {
+  font-size: 16px;
+  font-weight: medium;
+  color: #2BB32A;
+}
+
+.logo-slider-container {
+  margin-top: 80px;
+  gap: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.features-section {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  /* Ustawia kierunek kolumnowy dla sekcji */
+  align-items: center;
+}
+
+.features-container {
+  text-align: center;
+
+}
+
+.features-main-text {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.features-main-div {
+  margin-top: 50px;
+  /* Dostosuj do potrzeb */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  /* Umożliwia odstęp między elementami */
+}
+
+.features-offer-div {
+  display: flex;
+  /* Umożliwia flex dla każdej oferty */
+  flex-direction: row;
+  /* Ustawia kierunek wierszowy */
+  align-items: center;
+  /* Umożliwia wyrównanie elementów w osi pionowej */
+  text-align: left;
+  padding: 30px;
+}
+
+.features-offer-div img {
+  margin-right: 15px;
+  /* Odstęp między obrazem a tekstem */
+  width: 64px;
+  /* Dostosuj rozmiar obrazka do swoich potrzeb */
+  height: auto;
+  /* Utrzymuje proporcje obrazu */
+}
+
+.features-offer-div div {
+  display: flex;
+  flex-direction: column;
+  /* Ustawia tekst w kolumnie */
+}
+
+.features-offer-text {
+  font-weight: medium;
+  font-size: 24px;
+  flex-direction: column;
+  /* Umożliwia pogrubienie tekstu */
+}
+
+.features-offer-text-description {
+  color: #ADB2B1;
+  font-size: 16px;
+  font-weight: regular;
+}
+
+
+
+
+@media (min-width: 1440px) {
+  .bg {
+    right: -50px;
+  }
+}
+
+@media (max-width: 1300px) {
+
+  .get-started {
+    margin-left: 56px;
+    width: 175px;
+    height: 46px;
+  }
+
+
+  .frame21 {
+    margin-left: 65px;
+    width: 280px;
+  }
+
+  .framecard {
+    width: 550px;
+  }
+
+  h1 {
+    font-size: 45px;
+    /* Zmniejszenie wielkości czcionki */
+    margin-left: 60px;
+    /* Dostosowanie marginesów */
+  }
+
+  .bottomh1 {
+    font-size: 16px;
+    /* Zmniejszenie wielkości czcionki */
+    margin-left: 60px;
+    /* Dostosowanie marginesów */
+  }
+}
+
+@media (max-width: 850px) {
+
+  .header-container,
+  .stats-section,
+  .logo-slider-section,
+  .features-section,
+  .bg,
+  .framecard,
+  .bottomh1,
+  .p,
+  h1,
+  .get-started,
+  .frame21 {
+    display: none;
+  }
+
+  /* Centered message box */
+  .message-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #333;
+    font-family: "Mono", sans-serif;
+    font-size: 16px;
+  }
+}
